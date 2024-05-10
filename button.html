@@ -10,10 +10,29 @@
         border: none;
         height: 36px;
         width: 105px;
-        border-radius: 2px;
+        border-radius: 5px;
         cursor: pointer;
         margin-right:8px;
+        transition: opacity 0.15s;
     }
+    /* add some hover effect to subscribe button, color change when pointer is on button */
+    .Subscribe:hover{
+        opacity: 0.7;
+    }
+    /* when clicking, the button change more opaque more blurry */
+    .Subscribe:active{
+        opacity:0.4;
+    }
+
+    .JOIN:hover{
+       background-color: blue;
+       color:white; 
+    }
+
+    .JOIN:active{
+        opacity: 0.7;
+    }
+
     .JOIN{
         background-color: white;
         border-color: blue;
@@ -25,6 +44,8 @@
         border-radius:2px;
         cursor:pointer;
         margin-right: 8px;
+        transition: background-color 1s, 
+            color 1s;
     }
 
     .Tweet{
@@ -36,7 +57,13 @@
         border-radius: 18px;
         font-weight: bold;
         font-size: 15px;
-        cursor:pointer
+        cursor:pointer;
+        transition: box-shadow 0.15s;
+    }
+    /* box_shadow is the the shadow under the button, fist pixal is right, second is heigh, third is the opaque */
+    /* rgba is similar to rgb but add last variable opacity to it */
+    .Tweet:hover{
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
     }
 </style>
 
