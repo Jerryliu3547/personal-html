@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Grid Practice
+        </title>
+
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+        margin-bottom: 20px;
+            ">
+            <!-- there is 3 way of writting css -->
+            <!-- 1. is the inline style, use style attribute -->
+            <!-- 2. is the class attribute -->
+            <!-- 3. is the css file sit in other file -->
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">div 2<p>text</p></div>
+        </div>
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        margin-bottom: 20px;
+            ">
+            <!-- there is 3 way of writting css -->
+            <!-- 1. is the inline style, use style attribute -->
+            <!-- 2. is the class attribute -->
+            <!-- 3. is the css file sit in other file -->
+            <div style="background-color: lightblue;">div 1(100px)</div>
+            <div style="background-color: lightpink;">div 2(100px)<p>text</p></div>
+            <div style="background-color: lightblue;">div 3(200px)</div>
+            
+        </div>
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        margin-bottom: 20px;
+            ">
+            <!-- there is 3 way of writting css -->
+            <!-- 1. is the inline style, use style attribute -->
+            <!-- 2. is the class attribute -->
+            <!-- 3. is the css file sit in other file -->
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">div 2<p>whatever the free space left(1fr)</p></div>
+        </div>
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        margin-bottom: 20px;
+            ">
+            <!-- there is 3 way of writting css -->
+            <!-- 1. is the inline style, use style attribute -->
+            <!-- 2. is the class attribute -->
+            <!-- 3. is the css file sit in other file -->
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">div 2<p>whatever the free space left(1fr)</p></div>
+            <div style="background-color: lightblue;">div 3<p> another 1fr</p></div>
+        </div>
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 1fr 2fr;
+        margin-bottom: 20px;
+            ">
+            <!-- there is 3 way of writting css -->
+            <!-- 1. is the inline style, use style attribute -->
+            <!-- 2. is the class attribute -->
+            <!-- 3. is the css file sit in other file -->
+            <div style="background-color: lightblue;">div 1</div>
+            <div style="background-color: lightpink;">div 2<p>whatever the free space left(1fr)</p></div>
+            <div style="background-color: lightblue;">div 3<p> 2 twice as wide as secound column for 2fr vs 1 fr</p></div>
+        </div>
+
+
+        <div style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 20px;
+        column-gap: 20px;
+        row-gap: 40px;
+            ">
+            <!-- there is 3 way of writting css -->
+            <!-- 1. is the inline style, use style attribute -->
+            <!-- 2. is the class attribute -->
+            <!-- 3. is the css file sit in other file -->
+            <div style="background-color: lightblue; height: 100px;">1fr</div>
+            <div style="background-color: lightpink; height: 100px;">1fr</div>
+            <div style="background-color: lightblue; height: 100px;">1fr</div>
+            <div style="background-color: lightpink; height: 100px;">1fr</div>
+            <div style="background-color: lightblue; height: 100px;">1fr</div>
+            <div style="background-color: lightpink; height: 100px;">1fr</div>
+
+        </div>
+
+
+
+
+    </body>
+</html>
