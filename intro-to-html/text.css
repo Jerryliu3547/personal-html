@@ -1,5 +1,4 @@
-<!-- adding font and how to center the text -->
-<style>
+/* <!-- adding font and how to center the text --> */
 /* style all paragraph */
     p {
         font-family: Arial;
@@ -36,21 +35,4 @@
         padding-bottom: 18px;
 
     }
-
-</style>
-
-<p class="video-title"> 
-    Talking Tech and Ai with Google CEO
-</p>
-
-<p class="video-stats">
-    3.4M views &#183; 6 months ago
-</p>
-
-
-<!-- strong is inline highlight -->
-<!-- span could alt the inline text without altring other text  -->
-<p class="text_edit"> 
-    shop early for the <strong>Best selection</strong> of holiday favourites. <span class="shop_link">Shop Now</span>
-</p>
 

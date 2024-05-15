@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- this is the practice html for display block and inline block
+block takes entire line space, but inline block only take needed spaces -->
+<html>
+    <head>
+        <title>practive for block and inline_block</title> 
+        <style>
+            .name{
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .email{
+                display:block;
+            }
+            .customer_support{
+                display: inline-block;
+                width: 300px;
+                line-height: 1.5;
+            }
+
+            .no{
+                vertical-align: middle;
+            }
+
+            .yes{
+                vertical-align: middle;
+            }
+            .pickup{
+                display: block;
+                margin-bottom: 10px;
+            }
+            .destination{
+                display: block;
+                margin-bottom: 30px;
+            }
+
+            .request_now{
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type="text" placeholder="Email">
+
+        <p class="customer_support">
+            Thanks for Chantting with our customer support. 
+            would you like to take our quick survey?
+        </p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+
+        <h1>Request a ride now</h1>
+        <input class="pickup" type="text" placeholder="Enter pickup location">
+        <input class="destination" type="text" placeholder="Enter Destination">
+
+        <button class="request_now">Requestion Now</button>
+        <button class="schedule">Schedule for later</button>
+
+    </body>
+
+
+</html>
