@@ -1,0 +1,69 @@
+
+.thumbnail {
+    width: 100%;
+}
+
+
+.video-preview{
+    width:300px;
+    display: block;
+}
+
+
+.channel_picture {
+    display: inline-block;
+    width: 50px;
+    margin-top: 0px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.video_info {
+    display: inline-block;
+    width: 200px;
+}
+.video_block{
+    display: inline-block;
+    width: 100%;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.profile_picture{
+    width: 100%;
+    border-radius: 25px;
+
+}
+
+.bottom_info{
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.video_title{
+    width:200px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.video_stats, .video_author{
+    font-size: 12px;
+    color: rgb(96, 96, 96)
+}
+
+.video_author{
+    margin-bottom: 4px;
+}
+
+/* this is how to add css grid code */
+.video_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

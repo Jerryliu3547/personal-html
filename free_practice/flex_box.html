@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Box Practice</title>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <!-- this is how to use css to create a flex box -->
+        <div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+            <div style="background-color: lightblue; width: 100px;">div1 text(100px)</div>
+            <!-- in style, flex addribute is equal to 1fr in css grid to take up rest of the area -->
+            <div style="background-color: lightpink; flex: 1;">div2 <p>text</p></div>
+            <div style="background-color: lightblue; flex: 2;">div3 flex:2</div>
+        </div>
+
+
+        <div style="
+            display: flex; 
+            flex-direction: row;
+            margin-top: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            /* this is the css to adjust how box is aligned to center, front, end, etc. */
+            justify-content: center; ">
+            <div style="background-color: lightblue; width: 100px;">div1 text(100px)</div>
+            <!-- in style, flex addribute is equal to 1fr in css grid to take up rest of the area -->
+            <div style="background-color: lightpink; width: 100px;">div2 <p>text</p></div>
+            <div style="background-color: lightblue; width: 100px;">div3 flex:2</div>
+        </div>
+
+        <div style="
+            display: flex; 
+            flex-direction: row;
+            margin-top: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            /* this is the css to adjust how box is aligned to center, front, end, etc. */
+            justify-content: space-between; ">
+            <div style="background-color: lightblue; width: 100px;">div1 text(100px)</div>
+            <!-- in style, flex addribute is equal to 1fr in css grid to take up rest of the area -->
+            <div style="background-color: lightpink; width: 100px;">div2 <p>text</p></div>
+            <div style="background-color: lightblue; width: 100px;">div3 flex:2</div>
+        </div>
+
+        <div style="
+            display: flex; 
+            flex-direction: row;
+            margin-top: 30px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            /* this is the css to adjust how box is aligned to center, front, end, etc. */
+            justify-content: space-between;
+            align-items: end; ">
+            <div style="background-color: lightblue; width: 100px;">div1 text(100px)</div>
+            <!-- in style, flex addribute is equal to 1fr in css grid to take up rest of the area -->
+            <div style="background-color: lightpink; width: 100px;">div2 <p>text</p></div>
+            <div style="background-color: lightblue; width: 100px;">div3 flex:2</div>
+        </div>
+    </body>
+</html>
