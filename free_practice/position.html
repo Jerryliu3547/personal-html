@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Position Practice</title>
+
+    </head>
+
+    <body style="height: 3000px;
+                padding-top: 100px;
+                padding-left: 50px;">
+
+
+        <!-- position is the attribute to fix header on top -->
+        <!-- top attribution set how far header is from top of the screen there is also bottom, left and right -->
+        <!-- if set both right and left or bottom and top the bar will stretch and will adjust when window resize -->
+        <div style="position: fixed;
+                    height:40px;
+                    top: 10px;
+                    right:0px;
+                    left: 0px;
+                    color:white;
+                    background-color: black;
+                    z-index: 100;
+                    ">
+            header
+
+                    <!-- place a absolute position material, its position will be absolute to
+                    its fixed materials, not relative to page nor screen -->
+                    <div style="position:absolute;
+                    background-color: red;
+                    color: white;
+                    left: 20px;">absolute position</div>
+                    </div>
+
+        <div style="background-color: lightgreen;
+                    position: fixed;
+                    top: 50px;
+                    bottom:0;
+                    left:0;
+                    width: 72;
+                    ">
+            sidebar
+        </div>
+        
+        <!-- here is the code to add absolute position -->
+        <!-- note absolute position has a preset higher z-index, which means, it will 
+        appear on top of the layer, we may want to set header's z-index to a very high number
+        so other layer will not cover the header section -->
+        <div style="position:absolute;
+                    background-color: red;
+                    color: white;
+                    left: 300px;">absolute position</div>
+
+        <div style="background-color: lightblue; 
+                    height: 200px;
+                    width: 200px;
+                    position: relative;">
+            div1
+            <div style="position:relative;
+            background-color: red;
+            color: white;
+            left: 0;">absolute position</div>
+            </div>
+        </div>
+
+        <div style="background-color: lightpink; 
+                    height: 200px;
+                    width: 200px;
+                    ">
+            div2
+        </div>
+
+    </body>
+</html>

@@ -1,18 +1,19 @@
 
 .thumbnail {
     width: 100%;
+    
 }
 
 
-.video-preview{
+.video_preview{
     width:300px;
-    display: block;
+    position: relative;
 }
 
 
 .channel_picture {
     display: inline-block;
-    width: 50px;
+    width: 36px;
     margin-top: 0px;
     vertical-align: top;
     margin-right: 5px;
@@ -66,4 +67,34 @@
     row-gap: 30px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+/* media query helps adjust screen accordingly */
+
+@media (max-width:750px) {
+    .video_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .video_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video_time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom:8px;
+    right: 5px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top:4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
 }
